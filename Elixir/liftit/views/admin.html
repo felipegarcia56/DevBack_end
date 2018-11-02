@@ -1,0 +1,97 @@
+<!--Section: Main info-->
+<section class="mt-5 wow fadeIn">
+
+  <!--Grid row-->
+  <div class="row h-100 text-center">
+    <!--Grid column-->
+    <div class="col-md-6 col-sm-12 mb-4">
+      <!-- Card -->
+      <div class="card">
+        <!-- Card content -->
+        <div class="card-body" style="max-height:350px;overflow: auto">
+          <!-- Title -->
+          <h4 class="card-title"><a>Marcas</a></h4>
+          <!-- content -->
+          <span class="card-text" id="trademark_table"></span>
+          <!-- Button -->
+          <button class="btn btn-sm btn-success show_m" data-type='trademark' data-toggle="modal" data-target="#modal_admin">Agregar</button>
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!--Grid column-->
+    <!--Grid column-->
+    <div class="col-md-6 col-sm-12 mb-4">
+      <!-- Card -->
+      <div class="card">
+
+        <!-- Card content -->
+        <div class="card-body" style="max-height:350px;overflow: auto">
+
+          <!-- Title -->
+          <h4 class="card-title"><a>Carrocerías</a></h4>
+          <!-- Text -->
+          <span class="card-text" id="bodyword_table"></span>
+          <!-- Button -->
+          <button class="btn btn-sm btn-success show_m" data-type='bodywork' data-toggle="modal" data-target="#modal_admin">Agregar</button>
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!--Grid column-->
+    <!--Grid column-->
+    <div class="col-md-12 col-sm-12 mb-4 center-block">
+      <!-- Card -->
+      <div class="card">
+
+        <!-- Card content -->
+        <div class="card-body" style="max-height:350px;overflow: auto">
+
+          <!-- Title -->
+          <h4 class="card-title"><a>Tipo de vehiculo</a></h4>
+          <!-- Text -->
+          <span class="card-text" id="type_vehicle"></span>
+          <!-- Button -->
+          <button class="btn btn-sm btn-success show_m" data-type='type_v' data-toggle="modal" data-target="#modal_admin">Agregar</button>
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+
+</section>
+<!--Section: Main info-->
+
+<!-- Modal -->
+<div class="modal fade" id="modal_admin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="border border-light p-5" id="modal_form">
+        <div class="modal-body">
+            <div class="row p-1">
+              <div class="col-md-3 col-sm-6"><span class="label label-default font-weight-bold" >Nombre</span></div>
+              <div class="col-md-9 col-md-6"><input type="text" class="form-control" id="description" aria-describedby="nameHelp" placeholder="...Ingrese el nombre..."></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary" id="save_data">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

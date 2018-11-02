@@ -1,0 +1,164 @@
+<!--Section: Main info-->
+<section class="mt-5 wow fadeIn">
+
+  <!--Grid row-->
+  <div class="row h-100">
+    <!--Grid column-->
+    <div class="col-md-6 mb-4">
+        <!-- Default form subscription -->
+        <form class="border border-light p-5" id = "reg_u">
+            <div class="row pb-5">
+              <div class="col-md-12 text-center">
+                <p class="h4 mb-2">Registro Usuarios</p>
+                <p>Completa la siguiente información, pronto nos pondremos en contacto.</p>  
+              </div>                    
+            </div>                        
+            <div class="row">
+                <div class="col-md-12 mb-4 selector_tu"></div>
+                <div class="col-md-6 mb-4">
+                  <input type="text" id="last_name" name="last_name" class="form-control form-control-sm mb-4" placeholder="Apellidos">
+                </div>
+                <div class="col-md-6 mb-4">
+                  <input type="text" id="full_name" name="name" class="form-control form-control-sm mb-4" placeholder="Nombres">
+                </div>
+               <div class="col-md-6 mb-4">
+                  <select id="type_d" class="browser-default custom-select">
+                      <option value="" disabled>Elije el tipo de Document</option>
+                      <option value="1" selected>Cédula de ciudadania</option>
+                      <option value="2">Cédula de extranjería</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <input type="text" id="document" name="document" class="form-control mb-4" placeholder="Número de documento">
+                </div>
+                <div class="col-md-12 mb-4">
+                  <div class="input-group mb-3 d-none">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupFileAddon01">Cargar</span>
+                    </div>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="file" name='file' aria-describedby="inputGroupFileAddon01">
+                      <label class="custom-file-label" for="inputGroupFile01">PDF Documento</label>
+                    </div>
+                  </div>
+                </div>
+                                  
+            </div>
+            <div class="row">
+              <div class="col-md-12 content-center">
+                <button class="btn btn-sm btn-info btn-block" type="submit">Registrarme</button>
+              </div>
+            </div>
+        </form>
+        <!-- Default form subscription -->
+
+    </div>
+    <!--Grid column-->
+              <!--Grid column-->
+    <div class="col-md-6 mb-4">
+                    <!-- Default form subscription -->
+        <form class="border border-light p-5 h-100" id = "reg_v">
+            <div class="row">
+              <div class="col-md-12 text-center pb-5">
+                <p class="h4 mb-4">Registro Vehículos</p>
+                <p>¿Ya eres usuario?... Registra tus vehículos.</p>  
+              </div>                    
+            </div>                        
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                  <input type="text" id="plate" name="plate" class="form-control form-control-sm mb-4" placeholder="Placa">
+                </div>
+                <div class="col-md-6 mb-4">
+                  <input type="text" id="doc_p" name="doc_p" class="form-control form-control-sm mb-4" placeholder="Documento Propietarío">
+                </div>
+
+                <div class="col-md-12 mb-4 selector_v"></div>
+                <div class="col-md-12 mb-4 selector_tm"></div>
+                <div class="col-md-12 mb-4 selector_bw"></div>
+                            
+            </div>
+            <div class="row">
+              <div class="col-md-12 content-center">
+                <button class="btn btn-sm btn-info btn-block" type="submit" disabled>Registrar vehículo</button>
+              </div>
+            </div>
+        </form>
+        <!-- Default form subscription -->
+
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+
+</section>
+<!--Section: Main info-->
+
+<hr class="my-5">
+
+<!--Section: Main features & Quick Start-->
+<section>
+
+  <form class="border border-light p-5 h-100" id = "lookFor_user">
+    <div class="row">
+      <div class="col-md-12 text-center pb-5">
+        <p class="h4 mb-4">Consultar Información</p>
+        <p></p>  
+      </div>                    
+    </div>                        
+    <div class="row">
+        <div class="col-md-3 col-sm-12 mb-4">
+          <span class="label label-default font-weight-bold">Documento</span>
+        </div>
+        <div class="col-md-3 col-m-12 mb-4">
+          <input type="text" id="look_forD" name="look_forD" class="form-control form-control-sm mb-4" placeholder="Ingresa el documento a consultar.">
+        </div>
+        <div class="col-md-3 col-sm-12 mb-4">
+          <span class="label label-default font-weight-bold">Nombre</span>
+        </div>
+        <div class="col-md-3 col-m-12 mb-4">
+          <input type="text" id="look_forN" name="look_forN" class="form-control form-control-sm mb-4" placeholder="Ingresa el nombre a consultar.">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-sm-12 mb-4">
+          <span class="label label-default font-weight-bold">Placa</span>
+        </div>
+        <div class="col-md-3 col-m-12 mb-4">
+          <input type="text" id="look_forP" name="look_forP" class="form-control form-control-sm mb-4" placeholder="Ingresa laplaca a consultar.">
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 content-center">
+        <button class="btn btn-sm btn-info btn-block" type="submit">Buscar</button>
+      </div>
+    </div>
+</form>
+<!-- Default form subscription -->  
+<div class="user_info"></div>
+</section>
+
+
+<!-- Modal -->
+<div class="modal  fade" id="modal_info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Información general</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="max-height: 300px;overflow: auto">
+          <div class="row text-center">
+            <div class="col-md-12 col-sm-12"><span class="label label-default font-weight-bold" >Resultados</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-md-12" id="table_uv"></div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

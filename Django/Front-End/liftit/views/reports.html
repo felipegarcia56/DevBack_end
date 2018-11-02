@@ -1,0 +1,98 @@
+<!--Section: Main info-->
+<section class="mt-5 wow fadeIn">
+
+  <!--Grid row-->
+  <div class="row h-100">
+    <!--Grid column-->
+    <div class="col-md-6 col-sm-12 mb-4">
+        <div class="row pb-5">
+          <div class="col-md-12 text-center">
+            <p class="h4 mb-2">Marcas registradas</p>
+            <p></p>  
+          </div>
+        </div>                        
+        <div class="row">
+			<div class ="col-md-12 d-block mx-auto text-center" style="max-height: 300px;overflow: auto">				
+				<span id="table_trademark"></span>
+			</div>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 mb-4">
+        <div class="row pb-5">
+          <div class="col-md-10 text-center">
+            <p class="h4 mb-2">Reporte de vehículos</p>
+            <p></p>  
+          </div>
+            <div class="col-md-2 col-sm-12 text-center">
+    	    	<button type="button" class="export btn btn-sm btn peach-gradient">csv</button>  
+            </div>                    
+        </div>                        
+        <div class="row">
+			<div class ="col-md-12 d-block text-center" style="max-height: 300px;overflow: auto">				
+				<span id ="table_export"></span>
+			</div>
+        </div>
+    </div>
+</div>
+    <!--Grid column-->
+</section>
+<!--Section: Main info-->
+
+<hr class="my-5">
+
+<!--Section: Main features & Quick Start-->
+<section>
+
+  <form class="border border-light p-5 h-100" id = "lookFor_trademark">
+    <div class="row">
+      <div class="col-md-12 text-center pb-5">
+        <p class="h4 mb-4">Consultar Información por marcas</p>
+        <p>Para actualizar algún vehículo, da click sobre el.</p>  
+      </div>                    
+    </div>                        
+    <div class="row">
+        <div class="col-md-12 mb-4 selector_tm"></div>
+    </div>
+    <div id="trademark_record" style="max-height: 300px;overflow: auto"></div>
+</form>
+<!-- Default form subscription -->  
+</section>
+
+
+<!-- Modal -->
+<div class="modal  fade" id="modal_vehicle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Actualizar vehículo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="border border-light p-5 h-100" id = "updateV">
+	      <div class="modal-body">
+	          <div class="row">
+	            <div class="col-md-3 col-sm-12 p-2"><span class="label label-default font-weight-bold" >Placa</span></div>
+	            <div class="col-md-3 col-sm-12 p-2"><input class='form-control form-control-sm' type="text" id="new_plate" name="new_plate"></div>
+	            <div class="col-md-3 col-sm-12 p-2"><span class="label label-default font-weight-bold" >Tipo vehículo</span></div>
+	            <div class="col-md-3 col-sm-12 p-2"><span id="select_newv"></span></div>          	
+	          </div>
+	          <div class="row">
+	            <div class="col-md-3 col-sm-12 p-2"><span class="label label-default font-weight-bold" >Tipo carrocería</span></div>
+	            <div class="col-md-3 col-sm-12 p-2"><span id="select_newbw"></span></div>          	
+	            <div class="col-md-3 col-sm-12 p-2"><span class="label label-default font-weight-bold" >Marca</span></div>
+	            <div class="col-md-3 col-sm-12 p-2"><span id="select_newtm"></span></div>          	
+	          </div>
+	          <div class="row">
+	            <div class="col-md-3 col-sm-12 p-2"><span class="label label-default font-weight-bold" >Usuario</span></div>
+	            <div class="col-md-9 col-sm-12 p-2"><span id="select_newus"></span></div>          	        	
+	          </div>
+	      </div>
+	      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary" id="save_data">Guardar  </button>
+        </div>
+	  </form>
+    </div>
+  </div>
+</div>
