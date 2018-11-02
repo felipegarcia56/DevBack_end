@@ -30,6 +30,8 @@ Para el ejercicio 2 ejecutar el mismo comando en la carpeta principal del proyec
 - la base de datos fue desarrollada en Postgresql, se encuentra dentro de la carpeta Django.
 - el módulo web, se encuentra en: **Django/Front-End/liftit/**
 
+**La configuración de conexión a base de datos, se encuentra de acuerdo a la necesaría para el servidor Heroku, si requiere correr la API en ambiente local, configurar el objeto _DATABASES_ en settings.py**
+
 ### Elixir RestAPI
 - La app elixir para la publicación de una API de tipo REST, se desarrolló mediante el uso de PHOENIX framework.  
 - en la carpeta config, editar el archivo “dev.exs”, para la configuración y acceso al motor de base de datos Postgres.
